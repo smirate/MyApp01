@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+//Edit by h-okajima on android studio
 
 public class MyActivity extends Activity {
 
