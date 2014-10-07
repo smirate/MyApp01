@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 public class MyActivity extends Activity {
 
+    int count=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +22,10 @@ public class MyActivity extends Activity {
 
     public void changeLabel(View view) {
         //Log.v("TEST", "Clicked");
+        count++;
+        String s = String.valueOf(count);
         TextView tv = (TextView)findViewById(R.id.myLabel);
-        tv.setText("Changed!!");
+        tv.setText(s);
     }
 
     @Override
